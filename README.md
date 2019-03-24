@@ -8,8 +8,8 @@ The main syntax is : <br>
 	or <br>
 	<i>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Decqy d:0.025</i><br>
 
-If the user can :
--	do classification with the sample pattern by adding <b>Classif<b>:<font color="lime">Y</font>. If <b>Classif</b>:<font color="red">N</font>, then there are no classifcation task<br>
+The user can :
+-	do classification with the sample pattern by adding <b>Classif</b>:<font color="lime">Y</font>. If <b>Classif</b>:<font color="red">N</font>, then there are no classifcation task<br>
 	<u>Example :</u><br>
 	<i>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:3 B:DW U:Area b>Classif<b>:<font color="red">N</font></i><br>
 -	repeat the job <i>n</i> times by adding : <b>nbRep</b>:<n><br>
