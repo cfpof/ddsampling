@@ -1,6 +1,6 @@
 # Patterns Sampling in Distributed Databases
 
-To run DDSamplingRDF.jar, one want to unzip the DDSamplingRDF.rar file. The fold that we will obtain contains the jar file and another fold "Output". In this folder, we have the weighting matrix that we used to sample pattern from the distributed database (DBpedia+Wikidata). Now with the command line, move into the DDSamplingRDF folder (DDSamplingRDF/) and run one of the following requests.<br>
+To run DDSamplingRDF.jar, one want to unzip the DDSamplingRDF.rar file. The fold that we will obtain contains the jar file and another fold "Output". In this folder, we have the weighting matrix that we used to sample pattern from the distributed database (DBpedia+Wikidata). Now with the command line, move into the DDSamplingRDF folder (<i>DDSamplingRDF/</i>) and run one of the following requests.<br>
 The main syntax is : <br>
 	java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:<sample size> M:<maximum length constrain> B:<database> U:<utility> d:<decay if U:Decay>
 	Example :
