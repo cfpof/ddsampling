@@ -23,9 +23,10 @@ If the weighting matrix is not yet built, DDSamplingRDF want a first to build it
 	<b>Example :</b><br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Freq NEC:1000 <b>minNEC</b>:3000</i><br>
 
-When one want to draw a sample from a single fragment, he must specify it (<d>D</d> for DBpedia, <d>W</d> for Wikidata).<br>
+When one want to draw a sample from a single fragment, he must specify it (<b>D</b> for DBpedia, <b>W</b> for Wikidata).<br>
 	<b>Example :</b><br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:<b>D</b> U:Area</i> <br>
 	or<br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:<b>W</b> U:Area</i>
-
+<br>
+To find the <b>sampled patterns</b>, check the <b>Output</b> folder.
