@@ -19,7 +19,7 @@ The user can :
 	<b>Example :</b><br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Freq <b>NEC</b>:1000</i><br>
 
-If the weighting matrix is not yet built, DDSamplingRDF want a first to build the weighting matrix by requested the triplestores. We allow user to draw an input sample from the entities with a type (or class) having at least <i>k</i> entities by adding <b>minNEC</b>:\<k\><br>
+If the weighting matrix is not yet built, DDSamplingRDF want a first to build it by requesting the triplestores. We allow user to draw an input sample from the entities with a type (or class) having at least <i>k</i> entities by adding <b>minNEC</b>:\<k\><br>
 	<b>Example :</b><br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Freq NEC:1000 <b>minNEC</b>:3000</i><br>
 
