@@ -28,5 +28,5 @@ When one want to draw a sample from a single fragment, he must specify it (<b>D<
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:<b>D</b> U:Area</i> <br>
 	or<br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:<b>W</b> U:Area</i>
-<br>
+<br><br>
 To find the <b>sampled patterns</b>, check the <b>Output</b> folder.
