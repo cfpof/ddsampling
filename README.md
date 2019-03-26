@@ -12,10 +12,10 @@ The user can :
 -	do classification with the sampled patterns by adding <b>Classif</b>:<font color="lime">Y</font>. If <b>Classif</b>:<font color="#ff0000">N</font>, then there is no classifcation task<br>
 	<b>Example :</b><br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:3 B:DW U:Area <b>Classif</b>:<font color="red">N</font></i><br>
--	repeat the job <i>n</i> times by adding : <b>nbRep</b>:<n><br>
+-	repeat the job <i>n</i> times by adding : <b>nbRep</b>:\<n\><br>
 	<b>Example :</b><br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:2 B:DW U:Freq Classif:N <b>nbRep</b>:10</i><br>
--	restrict the number of entities per class that he want to use in order to decrease the input dataset by adding <b>NEC</b>:<value><br>
+-	restrict the number of entities per class that he want to use in order to decrease the input dataset by adding <b>NEC</b>:\<value\><br>
 	<b>Example :</b><br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Freq <b>NEC</b>:1000</i><br>
 
