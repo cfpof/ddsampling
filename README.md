@@ -4,7 +4,7 @@ To run <b>DDSamplingRDF.jar</b>, one want to unzip the DDSamplingRDF.rar file. T
 The main syntax is : <br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar <b>N</b>:\<sample size\> <b>M</b>:\<maximum length constrain\> <b>B</b>:\<database\> <b>U</b>:\<utility\> <b>d</b>:\<decay value if U:Decay\></i><br>
 	<b>Example :</b><br>
-	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Frea</i><br>
+	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Freq</i><br>
 	or <br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Decay d:0.025</i><br>
 
