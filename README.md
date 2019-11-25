@@ -75,11 +75,11 @@ The main syntax is : <br>
 	
 During the experiments, we found that the construction phase of the weighting matrix is ​​very expensive with large databases because it requires a good internet connection. To show you the difference, we have also distinguished two cases:
 
-	(1) Pretreatment with online matrix construction (Online).
-	(2) Pretreatment from the weighting matrix already built and stored locally (Offline).
+	(a) Pretreatment with online matrix construction (Online).
+	(a) Pretreatment from the weighting matrix already built and stored locally (Offline).
 	
 	
-Online
+<h3>(a) with the class "RaceTrack"</h3>
 	
 \>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
 	
@@ -101,7 +101,7 @@ Online
 	Rejetion rate : 0.0±0.0
 	*********** END ***************
 
-Offline
+<h3>(b) with the class "RaceTrack"</h3>
 
 \>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
 	
@@ -121,7 +121,7 @@ Offline
 	Rejetion rate : 0.0±0.0
 	*********** END ***************
 
-Online
+<h3>(a) with the class "Organisation"</h3>
 
 \>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
 
@@ -146,7 +146,7 @@ Online
 	Rejetion rate : 0.0±0.0
 	*********** END ***************
 
-Offline
+<h3>(b) with the class "Organisation"</h3>
 
 \>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
 	
