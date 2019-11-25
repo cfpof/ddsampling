@@ -75,7 +75,8 @@ The main syntax is : <br>
 	
 On line
 	
-	\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
+\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
+	
 	DDSapmling on RaceTrack data ...
 	Running with parameters :
 		Class : RaceTrack
@@ -96,7 +97,8 @@ On line
 
 Off line
 
-	\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
+\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
+	
 	DDSapmling on RaceTrack data ...
 	Running with parameters :
 		Class : RaceTrack
@@ -115,7 +117,8 @@ Off line
 
 Online
 
-	\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
+\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
+
 	DDSapmling on Organisation data ...
 	Running with parameters :
 		Class : Organisation
@@ -139,7 +142,8 @@ Online
 
 Off line
 
-	\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
+\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
+	
 	DDSapmling on Organisation data ...
 	Running with parameters :
 		Class : Organisation
