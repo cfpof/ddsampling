@@ -73,6 +73,16 @@ To enable you to evaluate DDSampling with the databases of the literature, we ha
 The main syntax is : <br>
 <i>\> java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar  <b>online:no</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<D, W or D+W (or DW)\> <b>maxLength</b>:\<maximal length constraint\> <b>class</b>:\<The class of DBpedia and Wikidata databases that one want to query\></i><br>
 	
+Here are some Web databases describing classes with joint properties to DBpedia and Wikidata :
+
+	Book	RaceTrack	MusicalArtist	Scientist	Royalty	Song	Actor	Writer
+	Language	Genre	Food	Station	TimePeriod	Cartoon	Case	Race	Biomolecule
+	Judge	ChemicalSubstance	SportFacility	Plant	MotorsportRacer	SportsTeamSeason
+	SportsManager	Cleric	Animal	FictionalCharacter	Politician	SocietalEvent	Event
+	Infrastructure	Stream	PeriodicalLiterature	SportsTeam	Software	BodyOfWater	Group
+	Broadcaster	NaturalPlace	WrittenWork	Artist	EducationalInstitution	Building	MusicalWork
+	Company	ArchitecturalStructure	Athlete	Work	Settlement	PopulatedPlace	Organisation	Place	Person
+	
 During the experiments, we found that the construction phase of the weighting matrix is ​​very expensive with large databases because it requires a good internet connection. To show you the difference, we have also distinguished two cases:
 
 	(a) Pretreatment with online matrix construction.
