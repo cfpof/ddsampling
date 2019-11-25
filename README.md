@@ -2,7 +2,11 @@
 
 To run <b>DDSamplingRDF.jar</b>, one want to unzip the DDSamplingRDF.rar file. The fold that we will obtain contains the jar file and another fold <b>Output</b>. In this folder, we have the weighting matrix (<b>matPond_C</b>, where <b>C</b> is the class) that we used to sample pattern from the distributed database (<b>DBpedia+Wikidata</b>). To do some simulation with the existing benchmarks, we use also some distributed local databases as mentioned in the paper.
 So we have folders that contain these distributed databases partitioned by ourselves from the UCI repository.
-Now with the command line, move into the DDSamplingRDF folder (<i>DDSamplingRDF/</i>) and run one of the following requests.<br> In our experiments, we distinguished two cases: (1) The database is distributed but stored locally. (2) The database is in the Web (DBpedia and / or Wikidata)
+Now with the command line, move into the DDSamplingRDF folder (<i>DDSamplingRDF/</i>) and run one of the following requests.<br> In our experiments, we distinguished two cases: 
+
+(1) The database is distributed but stored locally. 
+
+(2) The database is in the Web (DBpedia and / or Wikidata)
 
 <h2>(1) DDSampling on local distributed databases</h2>
 
