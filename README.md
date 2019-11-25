@@ -1,7 +1,8 @@
 <h1>Patterns Sampling in Distributed Databases</h1>
+#For submission in PAKDD'20
 
-To run <b>DDSamplingRDF.jar</b>, one want to unzip the DDSamplingRDF.rar file. The fold that we will obtain contains the jar file and another fold <b>Output</b>. In this folder, we have the weighting matrix (<b>matPond_C</b>, where <b>C</b> is the class) that we used to sample pattern from the distributed database (<b>DBpedia+Wikidata</b>). To do some simulation with the existing benchmarks, we use also some distributed local databases as mentioned in the paper.
-So we have folders that contain these distributed databases partitioned by ourselves from the UCI repository.
+To run <b>DDSamplingRDF.jar</b>, one want to unzip the DDSamplingRDF.rar file. The folder that we will obtain contains the jar file and 4 folders. In the <b>InputMatrix</b> folder, we have the weighting matrix (<b>matPond_C</b>, where <b>C</b> is the class) that we used to sample pattern from the distributed database (<b>DBpedia+Wikidata</b>). The folder <b>LocalDdistributedDataBases</b> contains the UCI databases partitioned horizontally (HL), vertically (VL) and finally in a hybrid manner (HD). The two other <b>Output*</b> folders contain the sampled pattern respectively from  UCI local dataset and Triplestore databases. The UCI datasets allow us to do local simulations such as site failures, non stability of the internet connection, etc.
+
 Now with the command line, move into the DDSamplingRDF folder (<i>DDSamplingRDF/</i>) and run one of the following requests.<br> In our experiments, we distinguished two cases: 
 
 	(1) The database is distributed but stored locally. 
