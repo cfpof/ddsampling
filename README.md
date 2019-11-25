@@ -176,4 +176,4 @@ During the experiments, we found that the construction phase of the weighting ma
 	Rejetion rate : 0.0±0.0
 	*********** END ***************
 
-
+As the results show, when we run these experiments, the error rate is 0 because the bases are accessible, the connection is stable, and the weighting matrix has just been created. However, we also noticed that with weight matrices stored locally for a few weeks, rejection rates are not zero, even if they remain low. This phenomenon is due to the fact that triplestores are updated frequently. <br>Another reason for not centralizing Web databases is that centralized information is not always identical to that available on the Web after a week</b>. Therefore, if you get non-zero error rates when testing with Web databases while the connection is stable, simply delete the locally stored weight matrix, and then restart the DDSampling algorithm.
