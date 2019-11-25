@@ -1,4 +1,4 @@
-<h1>Patterns Sampling in Distributed Databases</h1>
+				<h1>Patterns Sampling in Distributed Databases</h1>
 
 					*For submission in PAKDD'20
 
