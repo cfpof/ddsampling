@@ -10,7 +10,7 @@ The main syntax is : <br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar <b>online:no</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<"connect" for example\> <b>maxLength</b>:\<maximal length constraint\> <b>pType</b>:\<partitioning type VL, HL, HD\> <b>nbSites</b>:\<number of sites\> <b>nbFailedSites</b>:\<number of failed sites\> <b>errorRate</b>:\<error rate\> <b>recordSample</b>:\<Yes or No for reccording the sampled patterns\> </i><br>
 
 
-To enable you to evaluate DDSampling with the databases of the literature, we have made available the following bases in their partitioned forms as mentioned in the paper: "chess", "connect", "mushroom" and "waveform" which are in the <b> LocalDdistributedDataBases</ b> folder.
+To enable you to evaluate DDSampling with the databases of the literature, we have made available the following bases in their partitioned forms as mentioned in the paper: "chess", "connect", "mushroom" and "waveform" which are in the <b> LocalDdistributedDataBases</b> folder.
 
 	
 ********************************************************************************************************************************
