@@ -73,7 +73,13 @@ To enable you to evaluate DDSampling with the databases of the literature, we ha
 The main syntax is : <br>
 <i>\> java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar  <b>online:no</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<D, W or D+W (or DW)\> <b>maxLength</b>:\<maximal length constraint\> <b>class</b>:\<The class of DBpedia and Wikidata databases that one want to query\></i><br>
 	
-On line
+During the experiments, we found that the construction phase of the weighting matrix is ​​very expensive with large databases because it requires a good internet connection. To show you the difference, we have also distinguished two cases:
+
+	(1) Pretreatment with online matrix construction (Online).
+	(2) Pretreatment from the weighting matrix already built and stored locally (Offline).
+	
+	
+Online
 	
 \>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
 	
@@ -95,7 +101,7 @@ On line
 	Rejetion rate : 0.0±0.0
 	*********** END ***************
 
-Off line
+Offline
 
 \>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
 	
@@ -140,7 +146,7 @@ Online
 	Rejetion rate : 0.0±0.0
 	*********** END ***************
 
-Off line
+Offline
 
 \>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
 	
