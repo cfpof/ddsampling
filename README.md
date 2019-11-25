@@ -70,5 +70,90 @@ To enable you to evaluate DDSampling with the databases of the literature, we ha
 
 <h2>(2) DDSampling on triplestores (DBpedia and Wikidata)</h2>
 
-\> java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar  <b>online:no</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<D, W or D+W (or DW)\> <b>maxLength</b>:\<maximal length constraint\> <b>class</b>:\<The class of DBpedia and Wikidata databases that one want to query\>
+The main syntax is : <br>
+<i>\> java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar  <b>online:no</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<D, W or D+W (or DW)\> <b>maxLength</b>:\<maximal length constraint\> <b>class</b>:\<The class of DBpedia and Wikidata databases that one want to query\></i><br>
+	
+On line
+	
+	\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
+	DDSapmling on RaceTrack data ...
+	Running with parameters :
+		Class : RaceTrack
+		Utility : Freq
+		Sample size : 1000
+		Datasets : DW
+		Max length : 3
+	10000
+	20000
+	Preprocessing time (s) : 3.155
+	Total number of entities : 400
+	Please recover your sample from :
+	OutputRDFpatterns/DBpedia_RaceTrack_M3N1000.TXT
+	Sampling time (s) : 317.742
+	Cost of communication for sampling : 2960.0±0.0
+	Rejetion rate : 0.0±0.0
+	*********** END ***************
+
+Off line
+
+	\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
+	DDSapmling on RaceTrack data ...
+	Running with parameters :
+		Class : RaceTrack
+		Utility : Freq
+		Sample size : 1000
+		Datasets : DW
+		Max length : 3
+	Preprocessing time (s) : 0.048
+	Total number of entities : 400
+	Please recover your sample from :
+	OutputRDFpatterns/DBpedia_RaceTrack_M3N1000.TXT
+	Sampling time (s) : 552.659
+	Cost of communication for sampling : 2957.0±0.0
+	Rejetion rate : 0.0±0.0
+	*********** END ***************
+
+Online
+
+	\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
+	DDSapmling on Organisation data ...
+	Running with parameters :
+		Class : Organisation
+		Utility : Freq
+		Sample size : 1000
+		Datasets : DW
+		Max length : 3
+	10000
+	20000
+	...
+	340000
+	350000
+	Preprocessing time (s) : 2024.448
+	Total number of entities : 338402
+	Please recover your sample from :
+	OutputRDFpatterns/DBpedia_Organisation_M3N1000.TXT
+	Sampling time (s) : 379.48
+	Cost of communication for sampling : 2960.0±0.0
+	Rejetion rate : 0.0±0.0
+	*********** END ***************
+
+Off line
+
+	\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
+	DDSapmling on Organisation data ...
+	Running with parameters :
+		Class : Organisation
+		Utility : Freq
+		Sample size : 1000
+		Datasets : DW
+		Max length : 3
+	Preprocessing time (s) : 1.861
+	Total number of entities : 338402
+	Please recover your sample from :
+	OutputRDFpatterns/DBpedia_Organisation_M3N1000.TXT
+	Sampling time (s) : 343.528
+	Cost of communication for sampling : 2958.0±0.0
+	Rejetion rate : 0.0±0.0
+	*********** END ***************
+
 
