@@ -10,37 +10,62 @@ The main syntax is : <br>
 	or <br>
 	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Decay d:0.025</i><br>
 	
-<FRAME MARGINHEIGHT="2">
 	
-java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:no sampleSize:1000 utility:Freq dataset:connect maxLength:3 pType:VL nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:No
+********************************************************************************************************************************
+	
+\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:no sampleSize:1000 utility:Freq dataset:connect maxLength:3 pType:VL nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:No
+
 DDSampling on local distributed database : connect
+
 Running with parameters :
+
         Max length : 3
+	
         Utility : Freq
+	
         Sample size : 1000
+	
         Partition type : VL
+	
 Preprocessing time (s) : 3.483
+
 Total number of instances : 67557
+
 Rejection rate : 0.0
+
 Sampling time (s) : 0.019
+
 *********** END ***************
 
-java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:no sampleSize:1000 utility:Freq dataset:connect maxLength:3 pType:HL nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:Yes
+\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:no sampleSize:1000 utility:Freq dataset:connect maxLength:3 pType:HL nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:Yes
+
 DDSampling on local distributed database : connect
+
 Running with parameters :
+
         Max length : 3
+	
         Utility : Freq
+	
         Sample size : 1000
+	
         Partition type : HL
+	
 Preprocessing time (s) : 2.27
+
 Total number of instances : 67557
+
 Rejection rate : 0.0
+
 Please recover your sample from :
+
 OutputPatternsLocalDatabases/Freq/HL/connect/connect1000N1m3M0z0_0p.TXT
+
 Sampling time (s) : 0.04
+
 *********** END ***************
 	
-</FRAME>
+********************************************************************************************************************************
 
 The user can :
 -	do classification with the sampled patterns by adding <b>Classif</b>:<font color="lime">Y</font>. If <b>Classif</b>:<font color="#ff0000">N</font>, then there is no classifcation task<br>
