@@ -64,6 +64,27 @@ The main syntax is : <br>
 
 	*********** END ***************
 	
+
+\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:no sampleSize:1000 utility:Area dataset:connect maxLength:3 pType:HD nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:Yes
+
+	DDSampling on local distributed database : connect$
+	
+	Running with parameters :
+	
+		Max length : 3
+		
+		Utility : Area
+		Sample size : 1000
+		Partition type : HD
+	Preprocessing time (s) : 2.804
+	Total number of instances : 67557
+	Rejection rate : 0.0
+	Please recover your sample from :
+	OutputPatternsLocalDatabases/Area/HD/connect/connect1000N1m3M0z0_0p.TXT
+	Sampling time (s) : 0.032
+	*********** END ***************
+	
+	
 ********************************************************************************************************************************
 
 <h2>(2) DDSampling on triplestores (DBpedia and Wikidata)</h2>
