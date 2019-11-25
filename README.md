@@ -70,5 +70,5 @@ To enable you to evaluate DDSampling with the databases of the literature, we ha
 
 <h2>(2) DDSampling on triplestores (DBpedia and Wikidata)</h2>
 
-/> java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar  <b>online:no</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<D, W or D+W (or DW)\> <b>maxLength</b>:\<maximal length constraint\> <b>class</b>:\<The class of DBpedia and Wikidata databases that one want to query\>
+\> java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar  <b>online:no</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<D, W or D+W (or DW)\> <b>maxLength</b>:\<maximal length constraint\> <b>class</b>:\<The class of DBpedia and Wikidata databases that one want to query\>
 
