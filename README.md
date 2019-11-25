@@ -70,25 +70,5 @@ To enable you to evaluate DDSampling with the databases of the literature, we ha
 
 <h2>(2) DDSampling on triplestores (DBpedia and Wikidata)</h2>
 
-The user can :
--	do classification with the sampled patterns by adding <b>Classif</b>:<font color="lime">Y</font>. If <b>Classif</b>:<font color="#ff0000">N</font>, then there is no classifcation task<br>
-	<b>Example :</b><br>
-	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:3 B:DW U:Area <b>Classif</b>:<font color="red">N</font></i><br>
--	repeat the job <i>n</i> times by adding : <b>nbRep</b>:\<n\><br>
-	<b>Example :</b><br>
-	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:2 B:DW U:Freq Classif:N <b>nbRep</b>:10</i><br>
--	restrict the number of entities per class that he want to use in order to decrease the input dataset by adding <b>NEC</b>:\<value\><br>
-	<b>Example :</b><br>
-	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Freq <b>NEC</b>:1000</i><br>
+/> java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar  <b>online:no</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<D, W or D+W (or DW)\> <b>maxLength</b>:\<maximal length constraint\> <b>class</b>:\<The class of DBpedia and Wikidata databases that one want to query\>
 
-If the weighting matrix is not yet built, DDSamplingRDF want a first to build it by requesting the triplestores. We allow user to draw an input sample from the entities with a type (or class) having at least <i>k</i> entities by adding <b>minNEC</b>:\<k\><br>
-	<b>Example :</b><br>
-	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:DW U:Freq NEC:1000 <b>minNEC</b>:3000</i><br>
-
-When one want to draw a sample from a single fragment, he must specify it (<b>D</b> for DBpedia, <b>W</b> for Wikidata).<br>
-	<b>Example :</b><br>
-	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:<b>D</b> U:Area</i> <br>
-	or<br>
-	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingRDF.jar N:1000 M:10 B:<b>W</b> U:Area</i>
-<br><br>
-To find the <b>sampled patterns</b>, check the <b>Output</b> folder.
