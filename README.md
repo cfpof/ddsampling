@@ -75,8 +75,8 @@ The main syntax is : <br>
 	
 During the experiments, we found that the construction phase of the weighting matrix is ​​very expensive with large databases because it requires a good internet connection. To show you the difference, we have also distinguished two cases:
 
-	(a) Pretreatment with online matrix construction (Online).
-	(a) Pretreatment from the weighting matrix already built and stored locally (Offline).
+	(a) Pretreatment with online matrix construction.
+	(a) Pretreatment from the weighting matrix already built and stored locally.
 	
 	
 <h3>(a) with the class "RaceTrack"</h3>
