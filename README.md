@@ -86,7 +86,7 @@ Here are some Web databases describing classes with joint properties to DBpedia 
 	Broadcaster	NaturalPlace	WrittenWork	Artist	EducationalInstitution	Building	MusicalWork
 	Company	ArchitecturalStructure	Athlete	Work	Settlement	PopulatedPlace	Organisation	Place	Person
 	
-During the experiments, we found that the construction phase of the weighting matrix is ​​very expensive with large databases because it requires a good internet connection. To show you the difference, we have also distinguished two cases:
+During the experiments, we found that the construction phase of the weight matrix is very expensive with large databases because it requires a good internet connection. To show you the difference, we have also distinguished two cases:
 
 	(a) Pretreatment with online matrix construction.
 	(a) Pretreatment from the weight matrix already built and stored locally.
