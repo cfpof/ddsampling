@@ -88,7 +88,7 @@ Here are some Web databases describing classes with joint properties to DBpedia 
 During the experiments, we found that the construction phase of the weighting matrix is ​​very expensive with large databases because it requires a good internet connection. To show you the difference, we have also distinguished two cases:
 
 	(a) Pretreatment with online matrix construction.
-	(a) Pretreatment from the weighting matrix already built and stored locally.
+	(a) Pretreatment from the weight matrix already built and stored locally.
 	
 	
 <h3>(a) with the class "RaceTrack"</h3>
