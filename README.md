@@ -29,7 +29,7 @@ To enable you to evaluate DDSampling with the databases of the literature, we ha
 		Utility : Freq
 		Sample size : 1000
 		Partition type : VL
-	Preprocessing time (s) : 3.483
+	Preprocessing time (s) : 2.883
 	Total number of instances : 67557
 	Rejection rate : 0.0
 	Sampling time (s) : 0.019
