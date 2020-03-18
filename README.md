@@ -2,10 +2,10 @@
 
 						*For submission in PAKDD'20
 
-To run <b>DDSamplingPAKDD20.jar</b>, we want to unzip the DDSamplingPAKDD20.zip file and put the jar file into this folder. Into the DDSamplingPAKDD20 folder there are 4 sub-folders. In the <b>InputMatrix</b> folder, we have the weight matrix (<b>matPond_C</b>, where <b>C</b> is the class) that we used to sample pattern from the distributed database (<b>DBpedia+Wikidata</b>). The files "matPond_Organisation.zip", "matPond_Person.zip" and "matPond_matPond_RaceTrack.TXT" are some examples that we used. If you want to use one of them, just copy it in the InputMatrix folder. The folder <b>LocalDistributedDatabases</b> contains the UCI databases partitioned horizontally (HL), vertically (VL) and finally in a hybrid manner (HD). The two other <b>Output*</b> folders contain the sampled pattern respectively from  UCI local datasets and Triplestore databases. The UCI datasets allow us to do local simulations such as site failures, non stability of the internet connection, etc. <br>
+To run <b>DDSampling.jar</b>, we want to unzip the DDSampling.zip file and put the jar file into this folder. Into the DDSampling folder there are 4 sub-folders. In the <b>InputMatrix</b> folder, we have the weight matrix (<b>matPond_C</b>, where <b>C</b> is the class) that we used to sample pattern from the distributed database (<b>DBpedia+Wikidata</b>). The files "matPond_Organisation.zip", "matPond_Person.zip" and "matPond_matPond_RaceTrack.TXT" are some examples that we used. If you want to use one of them, just copy it in the InputMatrix folder. The folder <b>LocalDistributedDatabases</b> contains the UCI databases partitioned horizontally (HL), vertically (VL) and finally in a hybrid manner (HD). The two other <b>Output*</b> folders contain the sampled pattern respectively from  UCI local datasets and Triplestore databases. The UCI datasets allow us to do local simulations such as site failures, non stability of the internet connection, etc. <br>
 In addition, DDSampling can take into account utility measures such as the frequency (Freq) or the area (Area) of a pattern.
 
-Now with the command line, move into the DDSamplingPAKDD20 folder (<i>DDSamplingPAKDD20/</i>) and run one of the following requests.<br> In our experiments, we distinguished two cases: 
+Now with the command line, move into the DDSampling folder (<i>DDSampling/</i>) and run one of the following requests.<br> In our experiments, we distinguished two cases: 
 
 	(1) The database is distributed but stored locally. 
 	(2) The database is in the Web (DBpedia and / or Wikidata)
@@ -13,7 +13,7 @@ Now with the command line, move into the DDSamplingPAKDD20 folder (<i>DDSampling
 <h2>(1) DDSampling on local distributed databases</h2>
 
 The main syntax is : <br>
-	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar <b>online:no</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<"connect" for example\> <b>maxLength</b>:\<maximal length constraint\> <b>pType</b>:\<partitioning type VL, HL, HD\> <b>nbSites</b>:\<number of sites\> <b>nbFailedSites</b>:\<number of failed sites\> <b>errorRate</b>:\<error rate\> <b>recordSample</b>:\<Yes or No for reccording the sampled patterns\> </i><br>
+	<i>\>java "-Dfile.encoding=UTF-8" -jar DDSampling.jar <b>online:no</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<"connect" for example\> <b>maxLength</b>:\<maximal length constraint\> <b>pType</b>:\<partitioning type VL, HL, HD\> <b>nbSites</b>:\<number of sites\> <b>nbFailedSites</b>:\<number of failed sites\> <b>errorRate</b>:\<error rate\> <b>recordSample</b>:\<Yes or No for reccording the sampled patterns\> </i><br>
 
 
 To enable you to evaluate DDSampling with the databases of the literature, we have made available the following bases in their partitioned forms as mentioned in the paper: "chess", "connect", "mushroom" and "waveform" which are in the <b> LocalDdistributedDataBases</b> folder.
@@ -21,7 +21,7 @@ To enable you to evaluate DDSampling with the databases of the literature, we ha
 	
 ********************************************************************************************************************************
 	
-\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:no sampleSize:1000 utility:Freq dataset:connect maxLength:3 pType:VL nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:No
+\>java "-Dfile.encoding=UTF-8" -jar DDSampling.jar online:no sampleSize:1000 utility:Freq dataset:connect maxLength:3 pType:VL nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:No
 
 	DDSampling on local distributed database : connect
 	Running with parameters :
@@ -35,7 +35,7 @@ To enable you to evaluate DDSampling with the databases of the literature, we ha
 	Sampling time (s) : 0.019
 	*********** END ***************
 
-\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:no sampleSize:1000 utility:Freq dataset:connect maxLength:3 pType:HL nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:Yes
+\>java "-Dfile.encoding=UTF-8" -jar DDSampling.jar online:no sampleSize:1000 utility:Freq dataset:connect maxLength:3 pType:HL nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:Yes
 
 	DDSampling on local distributed database : connect
 	Running with parameters :
@@ -52,7 +52,7 @@ To enable you to evaluate DDSampling with the databases of the literature, we ha
 	*********** END ***************
 	
 
-\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:no sampleSize:1000 utility:Area dataset:connect maxLength:3 pType:HD nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:Yes
+\>java "-Dfile.encoding=UTF-8" -jar DDSampling.jar online:no sampleSize:1000 utility:Area dataset:connect maxLength:3 pType:HD nbSites:10 nbFailedSites:0 errorRate:0.0 recordSample:Yes
 
 	DDSampling on local distributed database : connect
 	Running with parameters :
@@ -74,7 +74,7 @@ To enable you to evaluate DDSampling with the databases of the literature, we ha
 <h2>(2) DDSampling on triplestores (DBpedia and Wikidata)</h2>
 
 The main syntax is : <br>
-<i>\> java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar  <b>online:yes</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<D, W or D+W (or DW)\> <b>maxLength</b>:\<maximal length constraint\> <b>class</b>:\<The class of DBpedia and Wikidata databases that one want to query\></i><br>
+<i>\> java "-Dfile.encoding=UTF-8" -jar DDSampling.jar  <b>online:yes</b> <b>sampleSize</b>:\<sample size\> <b>utility</b>:\<Freq or Area\> <b>dataset</b>:\<D, W or D+W (or DW)\> <b>maxLength</b>:\<maximal length constraint\> <b>class</b>:\<The class of DBpedia and Wikidata databases that one want to query\></i><br>
 	
 Here are some Web databases describing classes with joint properties to DBpedia and Wikidata :
 
@@ -94,7 +94,7 @@ During the experiments, we found that the construction phase of the weight matri
 	
 <h3>(a) with the class "RaceTrack"</h3>
 	
-\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
+\>java "-Dfile.encoding=UTF-8" -jar DDSampling.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
 	
 	DDSapmling on RaceTrack data ...
 	Running with parameters :
@@ -116,7 +116,7 @@ During the experiments, we found that the construction phase of the weight matri
 
 <h3>(b) with the class "RaceTrack"</h3>
 
-\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
+\>java "-Dfile.encoding=UTF-8" -jar DDSampling.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:RaceTrack
 	
 	DDSapmling on RaceTrack data ...
 	Running with parameters :
@@ -136,7 +136,7 @@ During the experiments, we found that the construction phase of the weight matri
 
 <h3>(a) with the class "Organisation"</h3>
 
-\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
+\>java "-Dfile.encoding=UTF-8" -jar DDSampling.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
 
 	DDSapmling on Organisation data ...
 	Running with parameters :
@@ -161,7 +161,7 @@ During the experiments, we found that the construction phase of the weight matri
 
 <h3>(b) with the class "Organisation"</h3>
 
-\>java "-Dfile.encoding=UTF-8" -jar DDSamplingPAKDD20.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
+\>java "-Dfile.encoding=UTF-8" -jar DDSampling.jar online:yes sampleSize:1000 utility:Freq dataset:DW maxLength:3 class:Organisation
 	
 	DDSapmling on Organisation data ...
 	Running with parameters :
